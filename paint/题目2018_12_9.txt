@@ -1,0 +1,56 @@
+学习使用Tkinter库中canvas相关内容(canvas的一些函数,如果要用，可以去百度查一下函数的参数该怎么设置)
+
+1、绘制一个等边三角形
+
+2、绘制一个正五边形
+
+3、绘制一个五角星
+
+
+hint:
+Canvas
+Canvas为Tkinter提供了绘图功能.其提供的图形组件包括线形,圆形,图片,甚至其他控件
+创建函数：Canvas(root,option,…)。
+
+master 代表了父窗口
+
+bg 背景色，如bg=”red”，bg="#FF56EF"
+
+fg 前景色，如fg=”red”，fg="#FF56EF"
+
+height 设置显示高度、如果未设置此项，其大小以适应内容标签
+
+relief 指定外观装饰边界附近的标签,默认是平的,可以设置的参数：flat、groove、raised、ridge、solid、sunken
+
+width 设置显示宽度，如果未设置此项，其大小以适应内容标签
+
+state 设置组件状态;正常(normal),激活(active),禁用(disabled)
+
+bd 设置Button的边框大小;bd(bordwidth)缺省为1或2个像素
+
+canvas的一些画图函数
+create_arc 绘制圆弧;
+
+create_bitmap 绘制位图，支持XBM，bitmap= BitmapImage(file = filepath)
+
+create_image 绘制图片，支持GIF(x,y,image,anchor); image= PhotoImage(file="../xxx/xxx.gif") ,目前仅支持gif格式
+
+create_line(x1,y1,x2,y2) 绘制直线 
+
+create_oval 绘制椭圆；
+
+create_polygon 绘制多边形(坐标依次罗列，不用加括号，还有参数，fill,outline)；
+
+create_rectangle 绘制矩形((a,b,c,d),值为左上角和右下角的坐标)；
+
+create_text 绘制文字(字体参数font,),如font=("Arial", 8)，font=("Helvetica 16 bold italic")
+
+create_window 绘制窗口；
+
+delete 删除绘制的图形；
+
+itemconfig 修改图形属性，第一个参数为图形的ID，后边为想修改的参数；
+
+move 移动图像
+
+coords(ID) 返回对象的位置的两个坐标（4个数字元组）
